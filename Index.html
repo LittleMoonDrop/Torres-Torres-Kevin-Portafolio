@@ -1,0 +1,147 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Portafolio</title>
+	
+<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dosis:wght@700&display=swap" rel="stylesheet">
+<link href="js/jquery.js.css" rel="stylesheet" type="text/css">
+<link href="css/main.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+<header>
+		<a href="#Yo" class="logo">Kevin Torres</a>
+		<u1>
+		  <li><a href="#ilustracion">Ilustración</a></li>
+		  <li><a href="#creación">Creación de personajes</a></li>
+		  <li><a href="#contacto">Contacto</a></li>
+		</u1>
+</header>
+	<!--Imagenes-->
+	<section>
+		<img src="IMG/Estrellas.png" id= "estrellas" alt="">
+		<img src="IMG/Luna.png" id= "Luna" alt="">
+		<img src="IMG/Atras.png" id= "Atras" alt="">
+		<h2 id="text">Bienvenido</h2>
+		<img src="IMG/Frente.png" id= "Frente" alt="">	
+</section>
+	<!--Texto-->
+	 <div class="sec" id="Yo">
+		 <h2>Acerca de mi</h2>
+	   <img src="IMG/Remini20210908191524798.jpg" alt="">
+	   <p>Soy un joven ilustrador que constantemente empuja sus limites para mejorar en lo que hago, me apasiona la creación e ilustración de personajes, tanto ajenos como propios. Considero a la ilustración como una herramienta creadora poderosa para contar historias y con el potencial de manifestar universos nuevos enteros.<br><br>Me especializo en la ilustración, así como en la creación de personajes y el concept art. Suelo trabajar bastante rápido y una vez que me propongo una meta no me detengo hasta completarla.
+		 Para la creación de las ilustraciones solo necesito una idea para poderla traer a la vida a través de Programas como Paint tool Sai,Illustrator, Clip Studio Paint y Photoshop. 
+
+	   </p>
+			 
+	 </div>
+	<!--Movimiento-->
+<script>
+		let estrellas = document.getElementById('estrellas')
+		let Luna = document.getElementById('Luna')
+		let Atras = document.getElementById('Atras')
+		let text = document.getElementById('text')
+		let Frente = document.getElementById('Frente')
+		window.addEventListener('scroll',function(){
+			let value = window.scrollY;
+			estrellas.style.left = value* 0.25 + 'px';
+			Luna.style.top = value* 0.05 + 'px';
+			Atras.style.top = value* 0.5 + 'px';
+			Frente.style.top = value* 0 + 'px';
+			text.style.marginRight = value* 3 + 'px';		
+		})
+
+	</script>
+	<!--Ilustración-->
+<div class="galeria" id="ilustracion">
+	<h2>Ilustración</h2>
+		<input type="checkbox" id="btn-modal">
+	<label for="btn-modal" class="lbl-modal"> 
+		<img src="IMG/Triangulo2.jpeg" alt=""/>
+		<img src="IMG/stefanny.png" alt=""/>
+    	<img src="IMG/ryu2.jpg" alt=""/>	
+    	<img src="IMG/Leidy3.jpg" alt=""/>		
+		<img src="IMG/Cevichica .jpg" alt=""/> 
+		<img src="IMG/RYO .jpg" alt=""/>
+		<img src="IMG/JOSH.jpg" alt=""/> 
+		<img src="IMG/mortality.jpg.jpg" alt=""/>
+		<img src="IMG/Underdewuater.jpg" alt=""/> 
+	</label>
+	<div class="modal" id="">
+		<div class="contenedor">
+			<header></header>
+			<label for="btn-modal">X</label>
+			<img src="IMG/Triangulo2.jpeg" alt=""/>
+			<div class="contenido">
+			</div>
+		</div>
+  </div>
+</div>
+
+	<!--Links-->
+<div class="Links">
+<div class="cuadrado">
+	<h3>Más ilustraciones</h3>
+    <a href="https://www.instagram.com/little_moon_drop/?hl=es"> <img src="IMG/celeste.png" alt=""/></a> 
+  </div>
+  <div class="cuadrado">
+	<h3>Vídeos</h3>
+	<a href="https://www.youtube.com/channel/UCR3EaCJYga_gmDlUnNKFrLg"><img src="IMG/sergio.png" alt=""/> </a>
+  <div class="fondo1">
+		<img src="IMG/Estrellas.png" alt=""/> 
+	</div>
+  </div>
+
+</div>	
+		
+<!--Carrusel-->
+  
+<div class="Carrusel" id="creación">
+  <h2>Creación de Personajes</h2>
+  <ul class="slider">
+    <li id="slide1">
+    	<img src="IMG/beatriz p.jpg" alt=""/> 
+	  </li>
+    <li id="slide2">
+    	<img src="IMG/lucelia C.jpg" alt=""/> 
+	  </li>
+    <li id="slide3">
+    	<img src="IMG/juana c.jpg" alt=""/> </li>
+  </ul>
+  
+  <ul class="menu">
+    <li>
+      <a href="#slide1">•</a>
+    </li>
+    <li>
+      <a href="#slide2">•</a>
+    </li>
+     <li>
+      <a href="#slide3">•</a>
+    </li>
+  </ul>
+</div>
+	
+	
+<!--Contactame-->
+<div class="Redes" id="contacto">
+	<h2>Contáctame</h2>
+
+	 <p>Puedes encontrarme e interactuar conmigo en mis redes sociales, donde encontraras más facetas de mi trabajo y mi trayectoria como ilustrador.<br><br>También puedes contactarme directamente a través de mi correo: Kevint.t@hotmail.com
+	   </p>
+	<a href="https://www.behance.net/kevintorres23"><img src="IMG/logo-behance@2x.png" alt=""></a>
+	<a href="https://www.instagram.com/little_moon_drop/?hl=es"><img src="IMG/Instagram-simbolo.png" alt=""></a>
+	<a href="https://www.youtube.com/channel/UCR3EaCJYga_gmDlUnNKFrLg"><img src="IMG/youtube_PNG102349.png" alt=""></a>
+	  <div class="fondo2">
+		<img src="IMG/Estrellas.png" alt=""/> 
+	</div>		 
+	
+	
+	</div>
+	
+</body>
+</html>
